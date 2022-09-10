@@ -40,7 +40,7 @@ public class Locacao {
                 break;
 
             default:
-                System.out.println("Midweek days are so-so.");
+                this.valorAluguel = movie.value;
                 break;
         }
 		
@@ -53,6 +53,15 @@ public class Locacao {
 			return "Cliente criado!";
 		}
 		return "Cliente não está ativo!";
+	}
+	
+	public void alugarFavoritos(Cliente client, String date, String hour) {
+		this.client = client;
+		this.date = date;
+		this.hour = hour;
+		for(Filme filme: client.favMovies) {	
+			this.movie = filme;
+		}
 	}
 
 }

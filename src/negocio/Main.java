@@ -36,6 +36,11 @@ public class Main {
 		transacao.addLocacao(locacao3);
 		transacao.addLocacao(locacao4);
 		
+		c1.favoritarFilme(f1);
+		c1.favoritarFilme(f2);
+		c1.favoritarFilme(f5);
+		
+		locacao.alugarFavoritos(c1);
 		transacao.verAlugueis();
 		
 	}
